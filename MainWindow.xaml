@@ -1,0 +1,84 @@
+﻿<Window x:Class="HW9_album.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HW9_album"
+        mc:Ignorable="d"
+        Title="PhotoAlbum" Height="600" Width="600">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Карпати" Height="40" FontWeight="Bold" FontSize="16" 
+                     Foreground="DarkCyan" Background="LightCyan">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Margin="10 0 0 0" Height="500" >
+                            <Image.Source>
+                                <BitmapImage UriSource="Images/1.jpg"/>
+                            </Image.Source>
+                        </Image>
+                        <Image Margin="10" Height="500">
+                            <Image.Source>
+                                <BitmapImage UriSource="Images/3.jpg"/>
+                            </Image.Source>
+                        </Image>
+                        <Image Margin="10" Height="500">
+                            <Image.Source>
+                                <BitmapImage UriSource="Images/4.jpg"/>
+                            </Image.Source>
+                        </Image>
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+
+            <TabItem Header="Львів" FontWeight="Bold" FontSize="16" 
+                     Foreground="DarkCyan" Background="LightCyan">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Margin="10 0 0 0" Height="500">
+                            <Image.Source>
+                                <BitmapImage UriSource="Images/6.jpg"/>
+                            </Image.Source>
+                        </Image>
+                        <Image Margin="10" Height="500">
+                            <Image.Source>
+                                <BitmapImage UriSource="Images/7.jpg"/>
+                            </Image.Source>
+                        </Image>
+                        <Image  Margin="10" Height="500">
+                            <Image.Source>
+                                <BitmapImage UriSource="Images/2.jpg"/>
+                            </Image.Source>
+                        </Image>
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+
+            <TabItem Header="Мукачево" FontWeight="Bold" FontSize="16" 
+                     Foreground="DarkCyan" Background="LightCyan">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Margin="10 0" Height="500" >
+                            <Image.Source>
+                                <BitmapImage UriSource="Images/9.jpg"/>
+                            </Image.Source>
+                        </Image>
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+
+            <TabItem Header="Умань" FontWeight="Bold" FontSize="16" 
+                     Foreground="DarkCyan" Background="LightCyan">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Margin="10 0" Height="500" >
+                            <Image.Source>
+                                <BitmapImage UriSource="Images/8.jpg"/>
+                            </Image.Source>
+                        </Image>
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
